@@ -8,7 +8,7 @@ use std::{
 use crate::util::thread::print_current_thread;
 
 pub fn run() {
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    let listener = TcpListener::bind("127.0.0.1:3030").unwrap();
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
